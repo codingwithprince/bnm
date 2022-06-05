@@ -10,9 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className='text-center'>
-          Welcome to Next
-        </h1>
+        
        </main>
     </div>
   )
