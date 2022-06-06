@@ -1,54 +1,75 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import {BiMenu} from 'react-icons/bi'
+import {AiOutlineClose} from 'react-icons/ai'
+
+const menuItems = [
+  {
+    name:'Home',
+    link:'/'
+  },
+  {
+    name:'Products',
+    link:'/products'
+  },
+  {
+    name:'Machinery',
+    link:'/machinery'
+  },
+  {
+    name:'Quality',
+    link:'/quality'
+  },
+  {
+    name:'Careers',
+    link:'/careers'
+  },
+  {
+    name:'Contact',
+    link:'/contact'
+  }
+]
 
 const Navbar = () => {
-  return (
-    <div className='flex shadow-md justify-between px-[10%] py-5'>
-        <div className="logo">
-                <Image src='/images/logos/logo.png' height={30} width={150} alt='logo' />
-        </div>
-        <div className="menu">
-          <ul className='list-style-none flex gap-5'>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>COMPANY</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>Product</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>MACHINERY</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>Quality</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>Contact</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>Careers</a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/'>
-                <a className='font-semibold ease-in-out duration-150 hover:text-blue-500 hover:border-blue-500 p-2 border-b-4 border-transparent text-lg text-[#555] uppercase'>Find us</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+
+  let [open,setOpen]=useState(false);
+
+return (
+  <div 
+  style={{
+    background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5))'
+  }}
+  className='shadow-md w-full fixed top-0 left-0 px-[5%]'>
+    <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
+    <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+    text-white'>
+      - B.N.M -
     </div>
-  )
+    
+    <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+      {
+        open? <AiOutlineClose color='white' /> : <BiMenu color='white' />
+      }
+    </div>
+
+    <ul className={`md:flex md:items-center  absolute md:static bg-white px-4 py-2 rounded-lg md:rounded-full items-center md:z-auto z-[-1] right-0 w-full md:w-auto md:pl-0 px-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+      {
+        menuItems.map((link)=>(
+          <li key={link.name} className='md:ml-8 text-md md:my-0 my-7'>
+            <Link href={link.link}>
+             <a className='text-gray-800 font-semibold uppercase hover:text-gray-400 duration-500'>{link.name}</a>
+            </Link>
+          </li>
+        ))
+      }
+    </ul>
+    {/* <button className='bg-blue-600 text-white text-md md:mx-4 hover:bg-blue-500 uppercase font-semibold px-3 py-2 rounded'>
+        Contact
+      </button> */}
+    </div>
+  </div>
+)
 }
 
 export default Navbar
