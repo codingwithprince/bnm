@@ -38,7 +38,8 @@ const Navbar = () => {
 return (
   <div 
   style={{
-    background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5))'
+    background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5))',
+    zIndex:'20'
   }}
   className='shadow-md w-full fixed top-0 left-0 px-[5%]'>
     <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
