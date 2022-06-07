@@ -38,7 +38,8 @@ const Navbar = () => {
 return (
   <div 
   style={{
-    background: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5))',
+    // backgroundColor:'white',
+    background: 'linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8))',
     zIndex:'20'
   }}
   className='shadow-md w-full fixed top-0 left-0 px-[5%]'>
@@ -54,7 +55,7 @@ return (
       }
     </div>
 
-    <ul className={`md:flex md:items-center  absolute md:static bg-white px-4 py-2 rounded-lg md:rounded-full items-center md:z-auto z-[-1] right-0 w-full md:w-auto md:pl-0 px-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+    <ul className={`md:flex md:items-center bg-white absolute md:static px-4 py-2 rounded-lg md:rounded-full items-center md:z-auto z-[-1] right-0 w-full md:w-auto md:pl-0  transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
       {
         menuItems.map((link)=>(
           <li key={link.name} className='md:ml-8 text-md md:my-0 my-7'>

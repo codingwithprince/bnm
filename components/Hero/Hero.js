@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Image from 'next/image'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
 import MultiCarousel from './MultiCarousel';
 
 
@@ -53,40 +55,43 @@ const heroImages =[
 
 ]
 
-const Hero = () => {
-  return (
-    <div
-    style={{
-        backgroundImage : "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url('/images/bg.png')",
-        backgroundPosition: 'center',
-        backgroundSize:'cover',
-        backgroundRepeat:'no-repeat',
-        paddingTop:'80px',
-        backgroundAttachment:'fixed'
-    }}>
-        <div className="hero md:px-[5%] py-0 grid grid-cols-1 md:grid-cols-2">
-              <div className="hero-text p-2 flex flex-col text-white md:mt-20">
-                  <h2 className='text-2xl md:mb-20'>Welcome to</h2>
-                  <h1 className='text-8xl sm:text-[150px] md:mb-20'>B.N.M</h1>
-                  <p className='text-justify mb-5'>We specialize in the sheet metal forming process and additional stampings to a desired product quality at a competitive price which will satisfy the needs of all customer and other partners in the sheet metal forming industry.
 
-Our goal is to become an important partner in the field of sheet metal forming and complex stampings for automotive and other industries.</p>
+
+const Hero = () => {
+
+
+  return (
+    <div className='pt-[80px] h-[100vh] flex items-center'>
+        <div className="hero md:px-[2%] py-0 grid grid-cols-1 md:grid-cols-2">
+              <div className="hero-text p-2 text-left flex flex-col text-white md:mt-20">
+                  <h2 className='text-8xl font-extrabold font-mono sm:text-[150px] md:mb-5 text-blue-600'>B.N.M</h2>
+                  <p className='text-justify text-gray-400 mb-2 md:w-[80%]'>We specialize in the sheet metal forming process and additional stampings to a desired product quality.</p>
               </div> 
-              <div className="hero-image-slider text-white">
-                  <Carousel showArrows={true} showThumbs={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
+
+
+              {/* =============== Slider with image =================== */}
+
+
+              <div className="hero-image-slider text-gray-700 flex justify-center items-center">
+                <div className="card w-[100%] bg-white p-5 rounded-lg shadow-lg ">
+                    <h3 className='py-5 font-semibold text-2xl'>Our Work</h3>
+                    <Carousel showThumbs={true} showArrows={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
                     {
                       heroImages.map(data => <div key={data.name}>
-                                <Image className='md:rounded-lg object-cover' src={data.img} height={900} width={1300}  alt='img'/>
-                                <p style={{background:'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5))'}} className="legend">
+                                <img className='md:rounded-lg ' src={data.img} height={700} width={1250}  alt='img'/>
+                                <p style={{background:'linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))',}} className="legend">
                                   {data.name}
                                   </p>
+                                  
                         </div>
-                    )
+                      )
                     }
-                </Carousel>
+                  </Carousel>
+                  
+
+                </div>  
               </div> 
         </div>
-        <MultiCarousel heroImages={heroImages} />
     </div>
   )
 }
