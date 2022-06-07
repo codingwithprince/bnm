@@ -73,7 +73,7 @@ const Hero = () => {
 
 
               <div className="hero-image-slider text-gray-700 flex justify-center items-center">
-                <div className="card w-[100%] bg-white p-5 rounded-lg shadow-lg ">
+                <div className="card w-[100%] bg-white p-1 md:p-5 rounded-lg shadow-lg ">
                     <h3 className='py-5 font-semibold text-2xl'>Our Work</h3>
                     <Carousel showThumbs={true} showArrows={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
                     {
