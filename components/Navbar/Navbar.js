@@ -38,29 +38,29 @@ const Navbar = () => {
   return (
     <div
       style={{
-        // backgroundColor:'white',
-        background: 'linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8))',
+        backgroundColor:'white',
+        // background: 'linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8))',
         zIndex: '20'
       }}
       className='shadow-md w-full fixed top-0 left-0 md:px-[5%]'>
       <div className='md:flex flex flex-wrap items-center justify-between py-4 md:px-10 px-[5%]'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-    text-white'>
+    text-blue-700'>
           - B.N.M -
         </div>
 
         <div onClick={() => setOpen(!open)} className='text-3xl  cursor-pointer md:hidden'>
           {
-            open ? <AiOutlineClose color='white' /> : <BiMenu color='white' />
+            open ? <AiOutlineClose color='black' /> : <BiMenu color='black' />
           }
         </div>
 
-        <ul className={`md:flex md:items-center bg-white absolute md:static px-4 pr-7 py-2 rounded-lg md:rounded-full items-center md:z-auto z-[-1] right-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-[60px]' : 'top-[-490px]'}`}>
+        <ul className={`md:flex md:items-center  bg-gray-700 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-[60px]' : 'top-[-490px]'}`}>
           {
             menuItems.map((link) => (
               <li onClick={()=> setOpen(!open)} key={link.name} className='md:ml-8 text-md md:my-0 my-7'>
                 <Link href={link.link}>
-                  <a className='text-gray-800 font-semibold uppercase hover:text-gray-400 duration-500'>{link.name}</a>
+                  <a className='text-white  font-semibold uppercase hover:text-gray-300 duration-500'>{link.name}</a>
                 </Link>
               </li>
             ))

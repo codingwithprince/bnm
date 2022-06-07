@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import MultiCarousel from './MultiCarousel';
 import Typed from "react-typed"
 
+
 const heroImages =[
   {
     name:'sestava kabin',
@@ -60,12 +61,12 @@ const Hero = () => {
 
 
   return (
-    <div className='pt-[80px] h-[100vh] flex items-center'>
+    <div className='pt-[80px] sm:px-[5%] px-[2px] flex items-center bg-[#EDF2F7]'>
         <div className="hero md:px-[2%] py-0 grid grid-cols-1 md:grid-cols-3">
               <div className="hero-text p-2 text-left text-white md:mt-20">
-                  <h2 className='text-8xl font-extrabold font-mono  text-blue-700'> B.N.M </h2>
+                  <h2 className='text-center sm:text-left text-8xl font-extrabold font-mono mb-5 text-blue-700'> B.N.M </h2>
                   <Typed
-                  className='text-gray-700 text-2xl my-2'
+                  className='text-gray-700 md:text-4xl text-2xl'
                     strings={[
                           "Avtomobilska Industrija",
                         ]}
@@ -73,7 +74,11 @@ const Hero = () => {
                         backSpeed={100}
                         loop
               />
-                  <p className='text-justify text-gray-700 my-3 md:w-[80%]'>We specialize in the sheet metal forming process and additional stampings to a desired product quality.</p>
+               <p className='text-gray-700 mt-5 text-xl text-justify md:pr-10'>Our field of activity is sheet metal forming, complex stamping and welding for the automotive industry.
+Machine capacities, knowledge and experience give us the opportunity to cooperate also with other industries which require such services or sheet metal products.</p>
+                <button className='mt-5 text-lg font-semibold bg-gray-700 text-white hover:bg-gray-600 px-4 py-2 rounded-full'>Contact</button>
+
+                 
               </div> 
 
 
@@ -81,8 +86,8 @@ const Hero = () => {
 
 
               <div className="hero-image-slider col-span-2 text-gray-700 flex justify-center items-center">
-                <div className="card w-[100%] bg-white p-1 md:p-5 rounded-lg shadow-lg ">
-                    <h3 className='py-5 font-semibold text-2xl'>Our Work</h3>
+                <div className="card w-[100%]  p-1 md:p-5 rounded-lg shadow-lg ">
+                    <h3 className='py-5 font-semibold text-2xl text-center'>Our Work</h3>
                     <Carousel showThumbs={true} showArrows={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
                     {
                       heroImages.map(data => <div key={data.name}>
