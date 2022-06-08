@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero/Hero'
+import HeroSection from '../components/Hero/HeroSection'
 
 export default function Home() {
   return (
@@ -13,8 +14,7 @@ export default function Home() {
 
       <main>
         {/* ========= Hero ======== */}
-        <Hero />
-        <Hero />
+        <HeroSection />
          
        </main>
     </div>

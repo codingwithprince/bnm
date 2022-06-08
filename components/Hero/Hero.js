@@ -70,6 +70,9 @@ const Hero = () => {
     //   backgroundPosition:'center',
     // }}
     className='pt-[80px] sm:px-[5%] px-[2px] sm:py-[120px] flex items-center bg-[#EDF2F7]'>
+
+
+      
         <div className="hero md:px-[2%] py-0 grid grid-cols-1 lg:grid-cols-3">
               <div className="hero-text p-2 text-left text-white md:mt-20">
                   <h2 className='text-center sm:text-left text-8xl font-extrabold font-mono mb-5 text-blue-700'> B.N.M </h2>
