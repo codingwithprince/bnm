@@ -60,7 +60,7 @@ const Hero = () => {
 
 
   return (
-    <div className='pt-[60px] sm:px-[5%]  sm:py-[120px] sm:pt-[200px] flex items-center'>
+    <div className='pt-[55px] sm:px-[5%]  sm:py-[120px] sm:pt-[200px] flex items-center bg-white'>
       <div className="hero md:px-[2%] py-0 grid grid-cols-1 lg:grid-cols-3">
         {/* =============== Slider with image =================== */}
         <div className="hero-image-slider col-span-2 text-gray-700 flex justify-center items-center">

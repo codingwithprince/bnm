@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero/Hero'
+import Reference from '../components/Reference/Reference'
 import TargetSection from '../components/TargetSection/TargetSection'
 import ValueAndStandards from '../components/ValueAndStandards/ValueAndStandards'
 
@@ -20,6 +21,10 @@ export default function Home() {
         {/* ========= Target Section ========= */}
 
         <TargetSection />
+
+        {/* ========= Reference ========== */}
+
+        <Reference />
 
         {/* ========= Value and Standards ========= */}
 
