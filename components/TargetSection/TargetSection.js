@@ -19,7 +19,14 @@ const cardInfo = [
 
 const TargetSection = () => {
     return (
-        <div className='py-20 flex justify-center items-center bg-gradient-to-b from-blue-500 to-cyan-500'>
+        <div 
+        style={{
+            backgroundImage:"linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/images/bg.png')",
+            backgroundRepeat:'no-repeat',
+            backgroundSize:'cover',
+            backgroundPosition:'center'
+        }}
+        className='py-20 flex justify-center items-center'>
             <div className="flex flex-wrap justify-center items-center">
                         {
                             cardInfo.map(data => <div 

@@ -19,7 +19,8 @@ const cardInfo = [
 
 const ValueAndStandards = () => {
   return (
-    <div className='py-[100px]'>
+    <div 
+    className='py-[100px]'>
         <h3 className='text-gray-700 font-bold text-2xl text-center pb-10'>Values and Standards</h3>
             <div className="flex flex-wrap justify-center items-center">
                         {

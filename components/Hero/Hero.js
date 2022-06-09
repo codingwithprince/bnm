@@ -66,10 +66,10 @@ const Hero = () => {
         <div className="hero-image-slider col-span-2 text-gray-700 flex justify-center items-center">
           <div className="card w-[100%]  md:p-5 rounded-lg">
             {/* <h3 className='py-5 font-semibold text-2xl text-center'>Our Work</h3> */}
-            <Carousel showThumbs={true} showArrows={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
+            <Carousel showThumbs={false} showArrows={true} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
               {
                 heroImages.map(data => <div key={data.name}>
-                  <img className='md:rounded-sm ' src={data.img} height={700} width={1250} alt='img' />
+                  <img className='md:rounded-sm sm:shadow-2xl object-cover h-[50vh]' src={data.img} height={700} width={1250} alt='img' />
                   <p style={{ background: 'linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))', }} className="legend">
                     {data.name}
                   </p>
@@ -80,7 +80,7 @@ const Hero = () => {
             </Carousel>
           </div>
         </div>
-        <div className="hero-text sm:ml-[15%] p-2 text-left text-white md:mt-10">
+        <div className="hero-text sm:ml-[15%] p-2 mt-5 text-left text-white md:mt-10">
           <h2 className='text-center animate-bounce sm:text-left text-6xl md:text-8xl font-extrabold font-mono mb-5 text-blue-700'> B.N.M </h2>
           <TypeAnimation
             className='text-gray-700 md:text-4xl md:text-left text-center text-2xl font-semibold '
