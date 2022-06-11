@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero/Hero'
+import ImageShow from '../components/ImageShow/ImageShow'
 import Reference from '../components/Reference/Reference'
 import TargetSection from '../components/TargetSection/TargetSection'
 import ValueAndStandards from '../components/ValueAndStandards/ValueAndStandards'
@@ -22,13 +23,18 @@ export default function Home() {
         <hr />
         <TargetSection />
 
+        {/* ========= Image Show ======== */}
+        <hr />
+        <ImageShow />
+
+        {/* ========= Value and Standards ========= */}
+        <hr />
+        <ValueAndStandards />
+
+        
         {/* ========= Reference ========== */}
         <hr />
         <Reference />
-
-        {/* ========= Value and Standards ========= */}
-
-        <ValueAndStandards />
         
        </main>
     </div>

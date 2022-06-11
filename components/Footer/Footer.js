@@ -26,7 +26,7 @@ const Footer = () => {
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <span className="block text-xs text-gray-500 sm:text-center dark:text-gray-400">© 2012 BNM avtomobilska industrija d.o.o. Vse pravice pridržane <br /> Oblikovanje: JK Izvedba: MD Consultico Mitja Divjak s.p.
             </span>
-            <p className='text-sm pt-10 text-center text-white'>Made by Prince ❤️</p>
+            <p className='text-sm pt-10 text-center text-white hover:underline'>Made by Prince ❤️</p>
         </footer>
     )
 }

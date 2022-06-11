@@ -23,7 +23,7 @@ const ValueAndStandards = () => {
   return (
     <div 
     style={{
-        backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url('/images/stiskalnice2.jpg')",
+        backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.98)),url('/images/stiskalnice2.jpg')",
         backgroundRepeat:'no-repeat',
         backgroundSize:'cover',
         backgroundPosition:'center'
