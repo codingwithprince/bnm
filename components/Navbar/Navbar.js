@@ -54,7 +54,7 @@ const Navbar = () => {
           }
         </div>
 
-        <ul className={`md:flex md:items-center shadow-lg md:shadow-md bg-gradient-to-b from-gray-800 to-gray-600 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
+        <ul className={`md:flex md:items-center shadow-sm md:shadow-md bg-gradient-to-b from-gray-800 to-gray-600 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
           {
             menuItems.map((link) => (
               <li onClick={()=> setOpen(!open)} key={link.name} className='md:ml-8 text-md md:my-0 my-7'>
