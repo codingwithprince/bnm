@@ -29,7 +29,7 @@ const ImageShow = () => {
     {/* <h2 className='text-gray-700 my-10 font-bold text-2xl text-center pb-5'>Our Images</h2> */}
     <div className='flex flex-wrap justify-center gap-5 '>
         {
-           images.map(data => <img className='h-[200px] shadow-sm transition ease-in-out duration-200 m-2 sm:m-4 rounded-lg hover:scale-105' key={data.id} src={data.img} alt={data.id} />) 
+           images.map(data => <img data-aos="zoom-in-down" className='h-[200px] shadow-sm transition ease-in-out duration-200 m-2 sm:m-4 rounded-lg hover:scale-105' key={data.id} src={data.img} alt={data.id} />) 
         }
     </div>
                 

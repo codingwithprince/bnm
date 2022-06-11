@@ -29,7 +29,7 @@ const TargetSection = () => {
         className='py-5 md:py-20 flex justify-center items-center '>
             <div className="flex flex-wrap justify-center items-center">
                         {
-                            cardInfo.map(data => <div 
+                            cardInfo.map(data => <div data-aos="fade-up"
                             className='bg-white shadow-xl hover:shadow-md hover:scale-105 transition ease-in-out duration-300 m-5 p-5 rounded-lg h-[400px] max-w-[350px] overflow-hidden'
                             key={data.title}>
                                 <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>
