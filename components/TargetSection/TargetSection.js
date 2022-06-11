@@ -34,7 +34,7 @@ const TargetSection = () => {
                             key={data.title}>
                                 <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>
                                 <hr />
-                                <p className='text-justify text-gray-700 mt-3'>{data.desc}</p>
+                                <p className='text-gray-800 mt-3'>{data.desc}</p>
 
                             </div>)
                         }

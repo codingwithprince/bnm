@@ -36,10 +36,10 @@ const ValueAndStandards = () => {
                         key={data.title}>
                             <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>
                             <hr />
-                            <p className='text-justify text-gray-700 mt-3 mb-2'>{data.desc}</p>
+                            <p className='text-justify text-gray-800 mt-3 mb-2'>{data.desc}</p>
                             <h4 className='text-gray-800 font-bold mt-5 text-center'>{data.title2}</h4>
                             <hr />
-                            <p className='text-justify text-gray-700 mt-3 mb-2'>{data.desc2}</p>
+                            <p className='text-gray-800 mt-3 mb-2'>{data.desc2}</p>
                         </div>)
                     }
                      

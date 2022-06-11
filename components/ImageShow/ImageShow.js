@@ -19,28 +19,20 @@ const images = [
         id:4,
         img:'/images/vhod.jpg'
     },
-    {
-        id:3,
-        img:'/images/sestanek.jpg'
-    },
-    {
-        id:4,
-        img:'/images/vhod.jpg'
-    }
 ]
 
 const ImageShow = () => {
 
 
   return (
-    <div className='pb-20 mb-10'>
-    <h2 className='text-gray-700 my-10 font-bold text-2xl text-center pb-5'>Our Images</h2>
-     <Marquee pauseOnHover={true} gradient={false} loop={0} speed={20}>
+    <div className='sm:py-20 py-5  bg-gray-100'>
+    {/* <h2 className='text-gray-700 my-10 font-bold text-2xl text-center pb-5'>Our Images</h2> */}
+    <div className='flex flex-wrap justify-center gap-5 '>
         {
-           images.map(data => <img className='sm:mx-10 sm:h-[300px] mx-2 hover:rounded-lg' key={data.id} src={data.img} alt={data.id} />) 
-        }        
-        
-    </Marquee>
+           images.map(data => <img className='h-[200px] shadow-sm transition ease-in-out duration-200 m-2 sm:m-4 rounded-lg hover:scale-105' key={data.id} src={data.img} alt={data.id} />) 
+        }
+    </div>
+                
 </div>
   )
 }
