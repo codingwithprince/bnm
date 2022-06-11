@@ -2,40 +2,51 @@ import React from 'react'
 
 const cardInfo = [
     {
-        title: 'Vision and mission',
-        desc:'We specialize in the sheet metal forming process and additional stampings to a desired product quality at a competitive price which will satisfy the needs of all customer and other partners in the sheet metal forming industry. Our goal is to become an important partner in the field of sheet metal forming and complex stampings for automotive and other industries.',
+        title: 'Management',
+        desc:'Our management style is based on openness, respect and reliability toward both our employees and our partners. We expect high performance, and we maintain a collaborative management style.',
 
     },
     {
-        title: 'History',
-        desc : 'Our company is located in the Commercial Production Zone Tezno Maribor which has more than 60 years experience in the metal sector. Until 1996 trucks and buses under the brand TAM had been produced at this location. Individual segments in production have produced even more since then. Knowledge and experience has been transferred to our company and upgraded with modern methods of management and operations.'
+        title: 'Employees',
+        desc : 'We bear our social responsibilities in mind when making business decisions. We assign our employees to work in the areas of their greatest strengths.We encourage entrepreneurial thinking and personal commitment, and show appreciation for achievement.'
     },
     {
-        title:'Customers',
-        desc:'Our field of activity is sheet metal forming, complex stamping and welding for the automotive industry. Machine capacities, knowledge and experience give us the opportunity to cooperate also with other industries which require such services or sheet metal products.'
-    }
+        title:'Quality',
+        desc:'We make every effort to meet our customers’ quality expectations.',
+        title2: 'Environment',
+        desc2:'We manage our resources responsibly, and operate on a basis of sustainability. Every employee makes his or her own contribution to protect the environment.'
+    },
 ]
 
 
 const ValueAndStandards = () => {
   return (
     <div 
-    className='py-[100px] bg-gray-200'>
-        <h3 className='text-gray-700 font-bold text-2xl text-center pb-10'>Values and Standards</h3>
-            <div className="flex flex-wrap justify-center items-center">
-                        {
-                            cardInfo.map(data => <div 
-                            className='bg-white m-5 p-5 shadow-lg rounded-lg h-[400px] w-[300px] overflow-hidden'
-                            key={data.title}>
-                                <h4 className='text-gray-900 font-semibold text-center mb-2'>{data.title}</h4>
-                                <hr />
-                                <p className='text-justify text-gray-700 mt-3'>{data.desc}</p>
+    style={{
+        backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url('/images/stiskalnice2.jpg')",
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'cover',
+        backgroundPosition:'center'
+    }}
+    className='py-5 md:py-20 flex justify-center items-center '>
+        <div className="flex flex-wrap justify-center items-center">
+                    {
+                        cardInfo.map(data => <div 
+                        className='bg-white shadow-xl hover:shadow-md hover:scale-105 transition ease-in-out duration-300 m-5 p-5 rounded-lg h-[320px] max-w-[350px] overflow-hidden'
+                        key={data.title}>
+                            <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>
+                            <hr />
+                            <p className='text-justify text-gray-700 mt-3 mb-2'>{data.desc}</p>
+                            <h4 className='text-gray-800 font-bold mt-5 text-center'>{data.title2}</h4>
+                            <hr />
+                            <p className='text-justify text-gray-700 mt-3 mb-2'>{data.desc2}</p>
+                        </div>)
+                    }
+                     
+                </div>
+       
 
-                            </div>)
-                        }
-                        
-                    </div>
-        </div>
+    </div>
   )
 }
 

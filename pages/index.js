@@ -19,11 +19,11 @@ export default function Home() {
         <Hero />
 
         {/* ========= Target Section ========= */}
-
+        <hr />
         <TargetSection />
 
         {/* ========= Reference ========== */}
-
+        <hr />
         <Reference />
 
         {/* ========= Value and Standards ========= */}

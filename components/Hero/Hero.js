@@ -60,7 +60,7 @@ const Hero = () => {
 
 
   return (
-    <div className='pt-[55px] sm:px-[5%]  sm:py-[120px] sm:pt-[200px] flex items-center bg-white'>
+    <div className='pt-[55px] sm:px-[5%]  sm:py-[120px] sm:pt-[160px] flex items-center bg-white'>
       <div className="hero md:px-[2%] py-0 grid grid-cols-1 lg:grid-cols-3">
         {/* =============== Slider with image =================== */}
         <div className="hero-image-slider col-span-2 text-gray-700 flex justify-center items-center">
@@ -92,7 +92,7 @@ const Hero = () => {
           <p className='text-gray-700 mt-5 text-xl text-justify md:pr-10'>Our field of activity is sheet metal forming, complex stamping and welding for the automotive industry.
             Machine capacities, knowledge and experience give us the opportunity to cooperate also with other industries which require such services or sheet metal products.</p>
           <div className="buttons text-center sm:text-left">
-            <button className='my-10 text-lg font-semibold bg-gradient-to-b from-blue-600 to-cyan-600 text-white hover:bg-blue-500 px-4 py-2 rounded-full'>Contact</button>
+            <button className='my-10 text-lg font-semibold bg-blue-700 text-white hover:bg-blue-600 px-4 py-2 rounded-full'>Contact</button>
           </div>
         </div>
       </div>

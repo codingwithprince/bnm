@@ -20,19 +20,19 @@ const cardInfo = [
 const TargetSection = () => {
     return (
         <div 
-        // style={{
-        //     backgroundImage:"linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('/images/bg.png')",
-        //     backgroundRepeat:'no-repeat',
-        //     backgroundSize:'cover',
-        //     backgroundPosition:'center'
-        // }}
-        className='py-20 flex justify-center items-center bg-gray-200'>
+        style={{
+            backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)),url('/images/merilnica.jpg')",
+            backgroundRepeat:'no-repeat',
+            backgroundSize:'cover',
+            backgroundPosition:'center'
+        }}
+        className='py-5 md:py-20 flex justify-center items-center '>
             <div className="flex flex-wrap justify-center items-center">
                         {
                             cardInfo.map(data => <div 
-                            className='bg-white hover:scale-105 transition ease-in-out duration-300 m-5 p-5 rounded-lg h-[400px] w-[300px] overflow-hidden'
+                            className='bg-white shadow-xl hover:shadow-md hover:scale-105 transition ease-in-out duration-300 m-5 p-5 rounded-lg h-[400px] max-w-[350px] overflow-hidden'
                             key={data.title}>
-                                <h4 className='text-gray-900 font-semibold text-center mb-2'>{data.title}</h4>
+                                <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>
                                 <hr />
                                 <p className='text-justify text-gray-700 mt-3'>{data.desc}</p>
 
@@ -40,23 +40,7 @@ const TargetSection = () => {
                         }
                         
                     </div>
-            {/* <div className="images h-[80vh] relative">
-                <Carousel showThumbs={false} showArrows={false} showIndicators={false} swipeable={true} infiniteLoop={true} autoPlay={true}>
-                    {
-                        heroImages.map(data => <div key={data.name}>
-                            <img className='h-[80vh] blur-sm object-cover' src={data.img} height={700} width={1250} alt='img' />
-                        </div>
-                        )
-                    }
-                </Carousel>
-                <div style={{
-                    background: 'linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))',
-                }} className="overlay h-[100%] absolute top-0 w-[100%] flex text-white justify-center items-center">
-                    
-                </div>
-
-            </div>
- */}
+           
 
         </div>
     )
