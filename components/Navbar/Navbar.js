@@ -57,11 +57,11 @@ const Navbar = () => {
         <ul className={`md:flex md:items-center shadow-sm md:shadow-none bg-gradient-to-b from-gray-800 to-gray-700 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
           {
             menuItems.map((link) => (
-              <li onClick={()=> setOpen(!open)} key={link.name} className='md:ml-8 text-md md:my-0 my-7'>
-                <Link href={link.link}>
-                  <a className='text-white font-semibold uppercase hover:text-gray-300 duration-500'>{link.name}</a>
-                </Link>
-              </li>
+              <Link href={link.link} key={link.name}>
+                <li onClick={()=> setOpen(!open)}  className='md:ml-8 text-md md:my-0 my-7'>
+                    <a className='text-white font-semibold uppercase hover:text-gray-300 duration-500'>{link.name}</a>
+                </li>
+              </Link>
             ))
           }
         </ul>
