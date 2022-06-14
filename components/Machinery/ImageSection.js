@@ -4,7 +4,7 @@ import React from 'react'
 const ImageSection = ({name, data}) => {
   console.log(name);
   return (
-    <div className="others px-[10%] px-2 py-5">
+    <div className="others md:px-[10%] px-2 py-5">
     <h3 className="text-center font-semibold text-2xl py-5 md:py-20 text-blue-800">{name}</h3>
     <div className="img-section gap-5 flex flex-wrap justify-center">
     {

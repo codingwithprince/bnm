@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Machinery from '../components/Machinery/machinery'
+import Machinery from '../components/Machinery/Machinery'
 
 
 const machinery = () => {
