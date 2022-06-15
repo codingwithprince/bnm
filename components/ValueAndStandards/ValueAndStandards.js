@@ -32,7 +32,6 @@ const ValueAndStandards = () => {
         <div className="flex flex-wrap justify-center items-center">
                     {
                         cardInfo.map(data => <div data-aos="fade-up"
-                        data-aos-duration="3000"
                         className='bg-white shadow-xl hover:shadow-md hover:scale-105 transition ease-in-out duration-300 m-5 p-5 rounded-lg h-[320px] max-w-[350px] overflow-hidden'
                         key={data.title}>
                             <h4 className='text-gray-800 font-bold text-center mb-2'>{data.title}</h4>

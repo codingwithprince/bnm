@@ -15,8 +15,8 @@ const ImageSection = ({name, data}) => {
         <div className="text py-5">
           <h4 className='text-center font-semibold'>{item.title}</h4>
           <hr />
-          <p className='capitalize text-center text-sm'>{item.desc1}</p>
-          <p>{item.desc2}</p>
+          <p className='text-center py-2 font-normal text-lg'>{item.desc1}</p>
+          <p className='text-gray-700 whitespace-pre-line text-center text-sm'>{item.desc2}</p>
         </div>
       </div>)
     }
