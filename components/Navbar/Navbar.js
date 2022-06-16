@@ -43,10 +43,12 @@ const Navbar = () => {
       }}
       className='w-full fixed top-0 left-0 md:px-[5%]  bg-white shadow-md'>
       <div className='md:flex flex flex-wrap items-center justify-between py-3 md:px-10 px-[5%]'>
-        <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-    text-gray-700'>
-          - B.N.M -
-        </div>
+        <Link href='/'>
+          <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-blue-700'>
+            - B.N.M -
+          </div>
+        </Link>
 
         <div onClick={() => setOpen(!open)} className='text-3xl  cursor-pointer md:hidden'>
           {
