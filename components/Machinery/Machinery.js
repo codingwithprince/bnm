@@ -68,7 +68,7 @@ const assembly =[
 const Machinery = () => {
   return (
     <div>
-        <h2 className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Machinery</h2>
+        <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Machinery</h2>
         <ImageSection name='Sheet metal cutting' data={cutting} />
         <ImageSection name='Sheet metal forming' data={forming} />
         <ImageSection name='Assembly' data={assembly} />

@@ -95,7 +95,7 @@ const others = [
 const Services = () => {
     return (
         <div className='mb-20'>
-            <h2 className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Products / Services</h2>
+            <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Products / Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center">
                 <div data-aos="fade-right" className="service-text-area flex flex-col justify-center items-center">
                     <div className="icons p-5">

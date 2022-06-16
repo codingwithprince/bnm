@@ -54,7 +54,7 @@ const Navbar = () => {
           }
         </div>
 
-        <ul className={`md:flex md:items-center shadow-sm md:shadow-none bg-gradient-to-b from-gray-800 to-gray-700 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-100 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
+        <ul className={`md:flex md:items-center shadow-sm md:shadow-none bg-gradient-to-b from-gray-700 to-gray-600 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-100 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
           {
             menuItems.map((link) => (
               <Link href={link.link} key={link.name}>
