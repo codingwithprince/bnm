@@ -38,7 +38,7 @@ const admins = [
 
 const ContactComp = () => {
   return (
-    <div className='sm:mt-[60px] py-20 md:py-10'>
+    <div>
         <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700 md:pb-5'>Contact</h2>
         <div className="contact-hero mt-5 flex flex-wrap justify-around items-center">
             <div className="contact-admins flex flex-col flex-wrap justify-center">
@@ -67,7 +67,7 @@ const ContactComp = () => {
 
                 </div>
             </div>
-            <div data-aos='fade-left' className="bnm-contact  shadow-lg rounded-md px-5 py-10 object-center flex flex-col items-center justify-center text-center">
+            <div data-aos='fade-up' className="bnm-contact  shadow-lg rounded-md px-5 py-10 object-center flex flex-col items-center justify-center text-center">
                 <img className='animate-bounce' src='/images/logos/logo.png' alt='bnm-logo' />
                 <p className='mt-7 text-gray-600 font-semibold'>BNM d.o.o., Cesta k Tamu 37 <br />
                     SI-2000 Maribor</p>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Careers = () => {
     return (
-        <div className='sm:mt-[60px] py-10'
+        <div 
         // style={{
         //     backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
         //     backgroundRepeat:'no-repeat',

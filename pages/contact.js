@@ -3,7 +3,7 @@ import ContactComp from '../components/Contact/ContactComp'
 
 const contact = () => {
   return (
-    <div>
+    <div className='mt-[80px]'>
         <ContactComp />
     </div>
   )

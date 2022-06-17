@@ -4,7 +4,7 @@ import React from 'react'
 const Quality = () => {
   return (
     <div
-    className='md:pt-10'
+    className='mb-10'
     // style={{
     //     backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
     //     backgroundRepeat:'no-repeat',

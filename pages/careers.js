@@ -3,7 +3,7 @@ import Careers from '../components/Careers/Careers'
 
 const careers = () => {
   return (
-    <div>
+    <div className='mt-[80px]'>
         <Careers />
     </div>
   )

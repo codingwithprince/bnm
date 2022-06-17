@@ -3,7 +3,7 @@ import FindUsComp from '../components/Findus/FindUsComp';
 
 const findus = () => {
   return (
-    <div className='mt-[100px]'>
+    <div className='mt-[80px]'>
         <FindUsComp />
     </div>
   )
