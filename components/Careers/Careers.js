@@ -3,13 +3,13 @@ import React from 'react'
 
 const Careers = () => {
     return (
-        <div className='sm:mt-[60px] py-20'
-        style={{
-            backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
-            backgroundRepeat:'no-repeat',
-            backgroundSize:'cover',
-            backgroundPosition:'center'
-        }}
+        <div className='sm:mt-[60px] py-10'
+        // style={{
+        //     backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
+        //     backgroundRepeat:'no-repeat',
+        //     backgroundSize:'cover',
+        //     backgroundPosition:'center'
+        // }}
         >
             <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700 md:pb-5'>Carrer by us</h2>
             <div className="careers mb-20 md:my-20 flex flex-wrap-reverse my-5 justify-center items-center">

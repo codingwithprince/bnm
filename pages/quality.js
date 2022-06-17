@@ -3,7 +3,7 @@ import Quality from '../components/Quality/Quality'
 
 const quality = () => {
   return (
-    <div className='mt-[60px]'>
+    <div className='mt-[100px]'>
         <Quality />
    </div>
   )

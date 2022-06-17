@@ -2,6 +2,7 @@
 import React from 'react'
 import {FaPhoneAlt} from 'react-icons/fa'
 import { MdEmail} from 'react-icons/md'
+import ContactForm from './ContactForm'
 
 
 const admins = [
@@ -66,7 +67,7 @@ const ContactComp = () => {
 
                 </div>
             </div>
-            <div data-aos='fade-left' className="bnm-contact py-10 object-center flex flex-col items-center justify-center text-center">
+            <div data-aos='fade-left' className="bnm-contact  shadow-lg rounded-md px-5 py-10 object-center flex flex-col items-center justify-center text-center">
                 <img className='animate-bounce' src='/images/logos/logo.png' alt='bnm-logo' />
                 <p className='mt-7 text-gray-600 font-semibold'>BNM d.o.o., Cesta k Tamu 37 <br />
                     SI-2000 Maribor</p>
@@ -76,6 +77,11 @@ const ContactComp = () => {
                 Registration number: 6004741000</p>
             </div>
         </div>
+        <hr className='my-5' />
+        <div className="form sm:px-[14%] mt-10 py-10">
+            <ContactForm />
+        </div>
+       
     </div>
   )
 }

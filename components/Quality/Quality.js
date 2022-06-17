@@ -5,12 +5,12 @@ const Quality = () => {
   return (
     <div
     className='md:pt-10'
-    style={{
-        backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundSize:'cover',
-        backgroundPosition:'center'
-    }}
+    // style={{
+    //     backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
+    //     backgroundRepeat:'no-repeat',
+    //     backgroundSize:'cover',
+    //     backgroundPosition:'center'
+    // }}
     >
          <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Quality</h2>
          <div className="flex flex-col justify-center mt-5 ">
