@@ -15,7 +15,7 @@ const Quality = () => {
          <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700'>Quality</h2>
          <div className="flex flex-col justify-center mt-5 ">
             <div className="quality-image flex justify-center">
-                <img data-aos="fade-up" className='md:my-10 hover:scale-105 transition-all ease-in-out' src='/images/merilnica.jpg' alt='' />
+                <img data-aos="fade-up" className='md:my-10 h-[50vh] object-cover hover:scale-105 transition-all ease-in-out' src='/images/merilnica.jpg' alt='' />
             </div>
             <div className="quality-text md:w-[50%] m-auto py-5 px-2">
                 <p data-aos="fade-up" className='text-lg text-gray-800'>The measurement of our policy of quality is the  <strong>zero mistake</strong> strategy from the automobile industry.</p>
