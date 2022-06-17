@@ -3,7 +3,14 @@ import React from 'react'
 
 const Careers = () => {
     return (
-        <div className='mt-[80px]'>
+        <div className='sm:mt-[60px] py-20'
+        style={{
+            backgroundImage:"linear-gradient(to right, rgba(0,0,0,0.05),rgba(0,0,0,0.05)),url('/images/bg2.png')",
+            backgroundRepeat:'no-repeat',
+            backgroundSize:'cover',
+            backgroundPosition:'center'
+        }}
+        >
             <h2 data-aos='fade-down' className='text-center text-2xl sm:text-4xl font-bold text-gray-700 md:pb-5'>Carrer by us</h2>
             <div className="careers mb-20 md:my-20 flex flex-wrap-reverse my-5 justify-center items-center">
                 <div data-aos='fade-right' className="careers-text md:mr-10 p-2 md:w-[60%]">
@@ -19,7 +26,7 @@ const Careers = () => {
                         Please send your inquiry with curriculum vitae (CV) to <a className='text-blue-700 font-semibold underline' href="mailto:delo@bnm.si">delo@bnm.si</a>
                     </p>
                 </div>
-                <div data-aos='fade-left' className="careers-img">
+                <div data-aos='fade-left' className="careers-img shadow-lg">
                     <img className='md:rounded-md sm:w-[500px] sm:h-[500px] object-cover' src='/images/vodenje-proizvodnje.jpg' alt='' />
                 </div>
 

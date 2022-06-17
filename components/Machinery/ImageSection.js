@@ -5,7 +5,7 @@ const ImageSection = ({name, data}) => {
   console.log(name);
   return (
     <div className="others md:px-[10%] px-2 py-5">
-    <h3 className="text-center font-semibold text-2xl py-5 md:py-20 text-blue-800">{name}</h3>
+    <h3 data-aos='fade-down' className="text-center font-semibold text-2xl py-5 md:py-20 text-blue-800">{name}</h3>
     <div className="img-section gap-5 flex flex-wrap justify-center">
     {
       data.map(item => <div data-aos="fade-up" key={item.id} className='shadow-lg'>

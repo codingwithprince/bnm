@@ -21,7 +21,7 @@ const TargetSection = () => {
     return (
         <div 
         style={{
-            backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.98)),url('/images/merilnica.jpg')",
+            backgroundImage:"linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url('/images/merilnica.jpg')",
             backgroundRepeat:'no-repeat',
             backgroundSize:'cover',
             backgroundPosition:'center'

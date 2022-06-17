@@ -34,7 +34,7 @@ const Reference = () => {
   return (
     <div className='pb-20 mb-10'>
         <h2 className='text-gray-700 my-10 font-bold text-2xl text-center pb-10'>Reference</h2>
-         <Marquee pauseOnHover={true} loop={0} speed={30}>
+         <Marquee pauseOnHover={false} loop={0} speed={30}>
             {
                refImg.map(data => <img className='sm:mx-20 mx-10' key={data.id} src={data.img} alt={data.id} />) 
             }        
