@@ -60,12 +60,12 @@ const Navbar = () => {
           }
         </div>
 
-        <ul className={`md:flex md:items-center shadow-sm md:shadow-none bg-gradient-to-b from-blue-700 to-blue-600 absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-100 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
+        <ul className={`md:flex md:items-center shadow-lg md:shadow-none  bg-white text-black absolute md:static px-4 pr-7 py-2 md:rounded-full items-center md:z-auto z-[5] right-0 w-full md:w-auto md:pl-0 transition-all duration-100 ease-in ${open ? 'top-[50px]' : 'top-[-490px]'}`}>
           {
             menuItems.map((link) => (
               <Link href={link.link} key={link.name}>
-                <li onClick={()=> setOpen(!open)}  className='hover:scale-105 transition-all ease-in-out md:ml-8 text-md md:my-0 my-7 cursor-pointer'>
-                    <a className='text-white font-semibold uppercase  duration-500'>{link.name}</a>
+                <li onClick={()=> setOpen(!open)}  className='border-b-2 border-transparent hover:border-gray-600 duration-300 transition ease-in-out md:ml-8 text-md md:my-0 my-7 px-2 cursor-pointer'>
+                    <a className='text-gray-600  font-bold uppercase  duration-500'>{link.name}</a>
                 </li>
               </Link>
             ))

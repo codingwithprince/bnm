@@ -104,7 +104,10 @@ const Hero = () => {
             <p className='text-gray-800 mt-5 text-xl text-justify md:pr-10'>Our field of activity is sheet metal forming, complex stamping and welding for the automotive industry.
               Machine capacities, knowledge and experience give us the opportunity to cooperate also with other industries which require such services or sheet metal products.</p>
             <div className="buttons text-center sm:text-left">
+            <a href="mailto:info@bnm.si">
               <button className='my-10 text-lg font-semibold bg-blue-700 text-white hover:bg-blue-600 px-4 py-2 rounded-full'>Contact</button>
+            </a>
+              
             </div>
           </div>
 
